@@ -15,7 +15,7 @@ ruby details.rb 9080
 docker build -t details .
 
 # Run details service on port 8081
-docker run -d --name details -p 8081:9080 -e ENABLE_EXTERNAL_BOOK_SERVICE=true details
+docker run -d --name details -p 8081:8081 details
 ```
 
 * Test with path `/details/1` and `/health`
