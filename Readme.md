@@ -26,3 +26,18 @@ docker run -d --name details -p 8081:8081 details
 ```bash
 docker-compose up
 ```
+
+## How to run kubectl
+
+```bash
+# Create deployment resource
+kubectl apply -f k8s/
+
+# Check status of each resource
+kubectl get deploy,pod,svc,ingress
+```
+## How to check 
+
+```bash
+curl http://itkmitl.bookinfo.dev.opsta.net/student3/details/health
+```
